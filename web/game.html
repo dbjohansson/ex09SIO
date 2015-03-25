@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 
 <!--
-  Copyright (c) 2015, <your name>. All rights reserved. Use of this source code
+  Copyright (c) 2015, <Denice B Johansson>. All rights reserved. Use of this source code
   is governed by a BSD-style license that can be found in the LICENSE file.
 -->
 
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
-    <title>exercise09</title>
-
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-
-<body>
-
-  <div id="output"></div>
-
-<script type="application/dart" src="main.dart"></script>
-<script data-pub-inline src="packages/browser/dart.js"></script>
-</body>
+    <title>Bonhomme</title>
+    <link rel="stylesheet" href="game.css">
+  </head>
+  <body>
+    <h1>Bonhomme</h1>
+    <p>
+      Move the mouse to exit the bonhomme to the right.
+      The goal is to avoid collisions with trees.<br/>
+      If the bonhomme is hit 5 times the game is over.<br/>
+    </p>
+    <canvas id="canvas" width="720" height="480">
+      <img id ="bonhomme" src="img/bonhomme.gif"></img>
+      <img id ="tree" src="img/tree.gif"></img>
+      <img id ="tree2" src="img/tree2.gif"></img>    
+    </canvas>
+    <br/>
+    <label id="winner"></label>
+    
+    <script type="application/dart" src="game.dart"></script>
+  </body>
 </html>
